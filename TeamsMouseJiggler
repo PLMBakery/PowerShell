@@ -3,7 +3,7 @@
 #
 # by PLMBaker
 #
-# rund this script with the PowerShell ISE and run it. Teams will stay active and not change the status when you AFK
+# run this script with the PowerShell ISE and run it. Teams will stay active and not change the status when you AFK
 
 
 Add-Type -TypeDefinition @"
