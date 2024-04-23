@@ -1,6 +1,5 @@
-﻿$loggedInUsername = $env:USERNAME
-$folderPath = "D:\MDTEMP\TC\$loggedInUsername\Teamcenter\RAC-4T\TC13\"
-$fileNamePattern = "$loggedInUsername*.log"
+﻿$folderPath = "D:\MDTEMP\NX\"
+$fileNamePattern = "z004rxsw*.syslog"
 
 # Function to get the latest log file
 function Get-LatestLogFile {
@@ -30,6 +29,3 @@ if (-not $latestLogFile) {
 # Monitor the latest log file
 Write-Host "Monitoring the latest log file: $latestLogFile"
 Get-Content -Path $latestLogFile -Wait
-
- # Wait for 5 minutes before checking for a new log file
-    Start-Sleep -Seconds 300

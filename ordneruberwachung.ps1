@@ -1,13 +1,4 @@
-﻿#Script zur Orderüberwachung wann und ob sich was an einem Ordner verändert
-# Falls die Skript ausführung in der Powershell nicht erlaubt ist oder blockiert kann mit der PowerShell mit diesem 
-# Befehl das ausführen erlaubt werden Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
-#
-#
-# by PLM Baker
-#
-# 2023
-
-$folder = 'C:\Test' # Bitte ändere diesen Pfad zum gewünschten Ordner.
+﻿$folder = 'C:\Gantry_SUB_ASMs' # Bitte ändere diesen Pfad zum gewünschten Ordner.
 $filter = '*.*' # Überwache alle Dateitypen
 
 $watcher = New-Object IO.FileSystemWatcher $folder, $filter -Property @{

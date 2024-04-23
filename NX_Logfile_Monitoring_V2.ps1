@@ -1,14 +1,5 @@
-﻿# copyright by PLM Baker
-#
-# 2023
-#
-#
-# This script is for monitoring the NX Logfile
-
-
-
-$loggedInUsername = $env:USERNAME
-$folderPath = "D:\[path to logfile]"
+﻿$loggedInUsername = $env:USERNAME
+$folderPath = "D:\MDTEMP\NX\"
 $fileNamePattern = "$loggedInUsername*.syslog"
 
 # Function to get the latest log file
